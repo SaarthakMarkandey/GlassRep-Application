@@ -22,4 +22,15 @@
     <string name="todo">TODO</string>
     <string name="products_of_the_day">Products of the Day!</string>
     <string name="view_all">View ALl</string>
+
+    <string name="sliderHead1">No. 1 Online Shop</string>
+    <string name="sliderHead2">Awesome Variety!</string>
+    <string name="sliderHead3">Sit and Relax</string>
+
+    <string name="sliderDes1">India best shop for buying glasses according to your need</string>
+    <string name="sliderDes2">A Place where you find everything with best Quality</string>
+    <string name="sliderDes3">Just select your product and get earliest</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
