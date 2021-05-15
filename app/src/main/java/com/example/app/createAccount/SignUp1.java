@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.app.Login;
 import com.example.app.R;
 
 public class SignUp1 extends AppCompatActivity {
@@ -27,6 +28,12 @@ public class SignUp1 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void callLogin(View view)
+    {
 
+        Intent intent = new Intent(getApplicationContext(), Login.class);
+
+        startActivity(intent);
+    }
 
 }

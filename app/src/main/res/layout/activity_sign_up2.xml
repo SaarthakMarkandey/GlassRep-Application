@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/text"
     android:padding="20dp"
-    tools:context=".SignUp2">
+    tools:context=".createAccount.SignUp2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,6 +17,7 @@
         android:layout_width="30dp"
         android:layout_height="40dp"
         android:src="@drawable/back"
+        android:onClick="callSignUp1"
         android:id="@+id/signUpBackButton"
         android:transitionName="transition_back_button"
         android:padding="5dp" />
@@ -42,13 +43,15 @@
         android:gravity="center"
         android:layout_marginTop="40dp">
 
-        <com.hbb20.CountryCodePicker
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
             android:layout_width="match_parent"
             android:id="@+id/countryCodePicker"
             android:layout_height="wrap_content"
-            app:ccp_autoDetectCountry="true"
             app:ccp_showFlag="true"
-            app:ccp_showNameCode="true"
+            android:paddingLeft="15dp"
+            app:ccp_backgroundColor="@color/text"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
             app:ccp_showFullName="true"
             android:layout_marginBottom="10dp"
             android:background="@drawable/border"/>
@@ -66,6 +69,9 @@
             app:endIconTint="@color/colorPrimaryDark"
             app:endIconMode="clear_text"
             app:boxStrokeWidthFocused="3dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:textColorHint="#757575"
             app:boxStrokeColor="@color/colorPrimaryDark">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -73,6 +79,8 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimaryDark"
                 android:fontFamily="@font/muli_regular"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:textCursorDrawable="@color/colorPrimaryDark"
                 android:inputType="phone"/>
 
@@ -93,13 +101,18 @@
             app:passwordToggleEnabled="true"
             app:endIconTint="@color/colorPrimaryDark"
             app:boxStrokeWidthFocused="3dp"
+            android:textColorHint="#757575"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
             app:boxStrokeColor="@color/colorPrimaryDark">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimaryDark"
+                android:focusableInTouchMode="true"
                 android:fontFamily="@font/muli_regular"
+                android:focusable="true"
                 android:textCursorDrawable="@color/colorPrimaryDark"
                 android:inputType="textPassword"/>
 

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SuccessMessage">
+    android:background="@color/text"
+    tools:context=".forgetPassword.SuccessMessage">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,6 +38,7 @@
             android:text="Your password has been updated"
             android:fontFamily="@font/muli_regular"
             android:textStyle="bold"
+            android:textColor="#757575"
             android:textAlignment="center"
             android:textSize="18sp"
             android:layout_gravity="center"/>

@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.app.Login;
 import com.example.app.R;
 
 public class SignUp2 extends AppCompatActivity {
@@ -22,6 +23,14 @@ public class SignUp2 extends AppCompatActivity {
     public void verifyOTPButton(View view)
     {
         Intent intent=new Intent(getApplicationContext(), com.example.app.createAccount.VerifyOtp.class);
+        startActivity(intent);
+    }
+
+    public void callSignUp1(View view)
+    {
+
+        Intent intent = new Intent(getApplicationContext(), SignUp1.class);
+
         startActivity(intent);
     }
 }

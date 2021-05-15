@@ -51,16 +51,19 @@
             android:gravity="center"
             android:layout_marginTop="65dp">
 
-            <com.hbb20.CountryCodePicker
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
                 android:layout_width="match_parent"
                 android:id="@+id/loginCountryCodePicker"
                 android:layout_height="wrap_content"
-                app:ccp_autoDetectCountry="true"
                 app:ccp_showFlag="true"
-                app:ccp_showNameCode="true"
+                android:paddingLeft="15dp"
+                app:ccp_backgroundColor="@color/text"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
                 app:ccp_showFullName="true"
                 android:layout_marginBottom="2dp"
-                android:background="@drawable/border"/>
+                android:background="@drawable/border"
+               />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -69,19 +72,24 @@
                 android:layout_height="wrap_content"
                 android:hint="Phone Number"
                 app:startIconDrawable="@drawable/phone"
+                android:textColorHint="#757575"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 app:startIconTint="@color/colorPrimaryDark"
                 app:hintTextColor="@color/colorPrimaryDark"
                 app:endIconTint="@color/colorPrimaryDark"
                 app:endIconMode="clear_text"
                 app:boxStrokeWidthFocused="3dp"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
                 app:boxStrokeColor="@color/colorPrimaryDark">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimaryDark"
+                    android:focusableInTouchMode="true"
                     android:id="@+id/phoneEditText"
+                    android:focusable="true"
                     android:fontFamily="@font/muli_regular"
                     android:textCursorDrawable="@color/colorPrimaryDark"
                     android:inputType="phone"/>
@@ -92,11 +100,14 @@
                 android:layout_width="match_parent"
                 android:id="@+id/loginPassword"
                 android:layout_height="wrap_content"
+                android:textColorHint="#757575"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:hint="Password"
                 app:hintTextColor="@color/colorPrimaryDark"
                 app:boxStrokeColor="@color/colorPrimaryDark"
                 app:boxStrokeWidthFocused="3dp"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
                 app:startIconDrawable="@drawable/password"
                 app:startIconTint="@color/colorPrimaryDark"
                 app:passwordToggleEnabled="true"
@@ -105,8 +116,10 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:focusable="true"
                     android:fontFamily="@font/muli_regular"
                     android:id="@+id/passwordEditText"
+                    android:focusableInTouchMode="true"
                     android:textCursorDrawable="@color/colorPrimaryDark"
                     android:textColor="@color/colorPrimaryDark"
                     android:inputType="textPassword"
@@ -163,6 +176,7 @@
                     android:drawableLeft="@drawable/login"
                     android:paddingLeft="100dp"
                     android:paddingRight="100dp"
+                    android:onClick="callOTPVerification"
                     android:textColor="@color/text"
                     android:layout_marginTop="15dp"/>
 
@@ -170,6 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="#757575"
                     android:layout_marginTop="15dp"
                     android:background="#00000000"
                     android:text="OR" />

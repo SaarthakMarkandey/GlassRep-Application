@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/text"
     android:padding="20dp"
-    tools:context=".signUpFiles.SignUp1">
+    tools:context=".createAccount.SignUp1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,6 +19,7 @@
             android:layout_height="40dp"
             android:src="@drawable/back"
             android:id="@+id/signUpBackButton"
+            android:onClick="callLogin"
             android:transitionName="transition_back_button"
             android:padding="5dp" />
 
@@ -53,14 +54,19 @@
                 app:startIconTint="@color/colorPrimaryDark"
                 app:hintTextColor="@color/colorPrimaryDark"
                 app:endIconTint="@color/colorPrimaryDark"
+                android:textColorHint="#757575"
                 app:endIconMode="clear_text"
                 app:boxStrokeWidthFocused="3dp"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
                 app:boxStrokeColor="@color/colorPrimaryDark">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:textCursorDrawable="@color/colorPrimaryDark"
                     android:fontFamily="@font/muli_regular"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
                     android:textColor="@color/colorPrimaryDark"
                     android:layout_height="wrap_content"
                     android:inputType="text"/>
@@ -76,8 +82,11 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 app:startIconTint="@color/colorPrimaryDark"
                 app:hintTextColor="@color/colorPrimaryDark"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
                 app:endIconTint="@color/colorPrimaryDark"
                 app:endIconMode="clear_text"
+                android:textColorHint="#757575"
                 app:boxStrokeWidthFocused="3dp"
                 app:boxStrokeColor="@color/colorPrimaryDark">
 
@@ -86,6 +95,8 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="@font/muli_regular"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
                     android:textCursorDrawable="@color/colorPrimaryDark"
                     android:inputType="textEmailAddress"/>
 
@@ -113,6 +124,7 @@
                     android:id="@+id/agePicker"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColorHint="#757575"
                     android:datePickerMode="spinner"
                     android:calendarViewShown="false"
                     android:spinnersShown="true"/>

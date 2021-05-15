@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.app.createAccount.SignUp1;
+import com.example.app.createAccount.VerifyOtp;
 import com.example.app.forgetPassword.ForgetPassword;
 
 
@@ -29,6 +29,12 @@ public class Login extends AppCompatActivity {
     public void callSignUp1Page(View view)
     {
         Intent intent=new Intent(getApplicationContext(), SignUp1.class);
+        startActivity(intent);
+    }
+
+    public void callOTPVerification(View view)
+    {
+        Intent intent=new Intent(getApplicationContext(), VerifyOtp.class);
         startActivity(intent);
     }
 }

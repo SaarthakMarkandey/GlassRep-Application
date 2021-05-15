@@ -1,6 +1,7 @@
 package com.example.app.onBoarding;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -36,6 +37,8 @@ public class OnBoarding extends AppCompatActivity {
         dotsLayout=findViewById(R.id.dots);
         letsGetStarted=findViewById(R.id.getStarted);
 
+
+
         sliderAdapter=new SliderAdapter(this);
         viewPager.setAdapter(sliderAdapter);
 
@@ -52,8 +55,9 @@ public class OnBoarding extends AppCompatActivity {
             dots[i]=new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226;"));
             dots[i].setTextSize(35);
-
+            dots[i].setTextColor(Color.parseColor("#757575"));
             dotsLayout.addView(dots[i]);
+
         }
 
         if(dots.length>0)
@@ -108,4 +112,5 @@ public class OnBoarding extends AppCompatActivity {
     {
         viewPager.setCurrentItem(current+1);
     }
+
 }

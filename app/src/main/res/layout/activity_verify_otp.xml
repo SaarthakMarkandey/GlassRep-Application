@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/text"
     android:layout_height="match_parent"
-    tools:context=".VerifyOtp">
+    tools:context=".createAccount.VerifyOtp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,8 +60,9 @@
             app:itemWidth="45dp"
             android:id="@+id/pinView"
             android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
             app:lineColor="@color/colorAccent"
-            android:itemBackground="@color/lightWhite"
+            android:itemBackground="@color/white"
             style="@style/PinWidget.PinView"
             android:inputType="number"
             android:cursorVisible="true"

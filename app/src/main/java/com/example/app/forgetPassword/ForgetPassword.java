@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.app.Login;
 import com.example.app.R;
 
 public class ForgetPassword extends AppCompatActivity {
@@ -20,6 +21,14 @@ public class ForgetPassword extends AppCompatActivity {
 
     public void callSetPasswordPage(View view) {
         Intent intent = new Intent(getApplicationContext(), PasswordReset.class);
+        startActivity(intent);
+    }
+
+    public void callLogin2(View view)
+    {
+
+        Intent intent = new Intent(getApplicationContext(), Login.class);
+
         startActivity(intent);
     }
 }
