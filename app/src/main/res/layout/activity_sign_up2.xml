@@ -132,6 +132,7 @@
             android:background="@drawable/big_button"
             android:onClick="verifyOTPButton"
             android:textColor="@color/text"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:transitionName="transition_next_button"
             android:elevation="8dp"/>
 

@@ -75,6 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:onClick="next"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:layout_alignParentRight="true"
             android:paddingBottom="30dp"
             android:background="#00000000"
