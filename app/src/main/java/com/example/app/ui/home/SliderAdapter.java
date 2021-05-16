@@ -34,7 +34,7 @@ public class SliderAdapter extends PagerAdapter {
         ConstraintLayout bannerContainer = view.findViewById(R.id.banner_container);
         bannerContainer.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor(sliderModelList.get(position).getBackgroundColor())));
         ImageView banner = view.findViewById(R.id.banner_slide);
-        Glide.with(view).load(sliderModelList.get(position).getBanner()).into(banner);
+        banner.setImageResource(sliderModelList.get(position).getBanner());
         container.addView(view,0);
         return view;
     }
