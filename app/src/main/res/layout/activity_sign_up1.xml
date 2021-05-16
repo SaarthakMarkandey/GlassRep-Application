@@ -148,6 +148,7 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/big_button"
             android:onClick="callSignUp2Page"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:textColor="@color/text"
             android:transitionName="transition_next_button"
             android:elevation="8dp"/>

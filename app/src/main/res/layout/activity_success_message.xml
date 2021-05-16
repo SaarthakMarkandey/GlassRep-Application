@@ -50,6 +50,7 @@
             android:layout_marginTop="70dp"
             android:textSize="16sp"
             android:onClick="goToLoginButton"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:textColor="@color/text"
             android:background="@drawable/big_button"/>
 

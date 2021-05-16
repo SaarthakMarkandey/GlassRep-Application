@@ -175,6 +175,7 @@
                     android:background="@drawable/big_button"
                     android:drawableLeft="@drawable/login"
                     android:paddingLeft="100dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
                     android:paddingRight="100dp"
                     android:onClick="callOTPVerification"
                     android:textColor="@color/text"
