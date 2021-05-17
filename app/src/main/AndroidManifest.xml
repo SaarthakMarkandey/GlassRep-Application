@@ -17,7 +17,9 @@
         <activity android:name=".forgetPassword.SetPassword" />
         <activity android:name=".createAccount.VerifyOtp" />
         <activity android:name=".forgetPassword.ForgetPassword" />
+        <activity android:name=".cartactivity"/>
         <activity android:name=".SplashScreen">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

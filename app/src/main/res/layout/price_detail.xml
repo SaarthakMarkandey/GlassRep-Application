@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text"
+    >
+    <LinearLayout
+        android:background="@color/text"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price Details"
+            android:layout_marginLeft="15dp"
+            android:textSize="28dp"
+            android:fontFamily="@font/gilroylight"
+            android:textColor="@color/galaxy_blue"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/galaxy_blue"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Lenskart Price"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/galaxy_blue"
+                android:fontFamily="@font/gilroylight"/>
+            <TextView
+                android:id="@+id/our_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 4000/-"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/gilroylight"
+                android:textColor="@color/galaxy_blue"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Product Discount"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/galaxy_blue"
+                android:fontFamily="@font/gilroylight"/>
+            <TextView
+                android:id="@+id/total_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-₹ 400/-"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/gilroylight"
+                android:textColor="@color/red"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Discounted Price"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/galaxy_blue"
+                android:fontFamily="@font/gilroy"/>
+            <TextView
+                android:id="@+id/total_discounted_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 3600/-"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/gilroy"
+                android:textColor="@color/galaxy_blue"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/galaxy_blue"
+                android:fontFamily="@font/gilroylight"/>
+            <TextView
+                android:id="@+id/tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+₹ 800/-"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/gilroylight"
+                android:textColor="@color/galaxy_blue"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convenience Fees"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/galaxy_blue"
+                android:fontFamily="@font/gilroylight"/>
+            <TextView
+                android:id="@+id/conveince_fees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREE"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/gilroylight"
+                android:textColor="@color/galaxy_blue"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
