@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.App.NoActionBar"
+    android:background="@color/text"
+
+    tools:context=".cartactivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.App.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/galaxy_blue"
+            app:popupTheme="@style/Theme.App.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_back_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+            <TextView
+                android:id="@+id/toolbarTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:maxLines="1"
+                android:text="My Cart"
+                android:textSize="22dp"
+                android:fontFamily="@font/gilroyregular"
+                android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                android:visibility="visible" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/summary"
+        android:background="@color/text"
+
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/total_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount(4 Items):"
+                android:textSize="20dp"
+
+                android:textColor="@color/galaxy_blue"
+                android:fontFamily="@font/gilroyregular"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                />
+            <ImageView
+                android:id="@+id/info_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_info_24"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/galaxy_blue"
+                android:textSize="20dp"
+                android:text="₹2500/-"/>
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/place_order"
+            android:layout_margin="8dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/galaxy_blue"
+            android:text="Place Order"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:fontFamily="@font/gilroymedium"
+
+            /></LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cart"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarFadeDuration="1"
+        android:layout_below="@+id/app_bar_layout"
+        android:scrollIndicators="right"
+        android:layout_above="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
