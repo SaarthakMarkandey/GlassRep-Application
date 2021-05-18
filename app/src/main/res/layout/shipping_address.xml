@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="254dp"
         android:background="@drawable/slider_background"
         android:backgroundTint="@color/galaxy_blue"
         android:elevation="3dp"
@@ -18,6 +19,7 @@
         android:text="@string/shipping_address"
         android:textColor="@color/white"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,11 +28,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="20dp"
         android:ems="7"
         android:hint="@string/first_name"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/last_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shipping_address" />
 
@@ -39,7 +42,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="85dp"
         android:layout_marginEnd="33dp"
         android:ems="7"
         android:hint="@string/last_name"
@@ -47,20 +49,21 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/first_name"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/first_name" />
 
     <EditText
         android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="33dp"
         android:ems="18"
         android:hint="@string/address"
         android:importantForAutofill="no"
         android:inputType="textPostalAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/first_name" />
 
@@ -72,25 +75,25 @@
         android:layout_marginTop="22dp"
         android:ems="7"
         android:hint="@string/city"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/postal_code"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/address"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/address" />
 
     <EditText
         android:id="@+id/postal_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="22dp"
         android:layout_marginEnd="33dp"
         android:ems="7"
         android:hint="@string/postal_code"
+        android:importantForAutofill="no"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/city"
-        app:layout_constraintTop_toBottomOf="@+id/address"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toTopOf="@+id/city" />
 
     <TextView
         android:id="@+id/shipping_methods"
@@ -98,6 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="312dp"
+        android:layout_marginEnd="250dp"
         android:background="@drawable/slider_background"
         android:backgroundTint="@color/galaxy_blue"
         android:elevation="3dp"
@@ -105,6 +109,7 @@
         android:text="@string/shipping_methods"
         android:textColor="@color/white"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -114,11 +119,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="43dp"
         android:background="@drawable/slider_background"
         android:padding="8dp"
         android:text="@string/standard_shipping"
         android:textColor="@color/galaxy_blue"
         android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shipping_methods" />
 
@@ -128,19 +135,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="43dp"
         android:background="@drawable/slider_background"
         android:padding="8dp"
         android:text="@string/premium_shipping"
         android:textColor="@color/galaxy_blue"
         android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/standard_shipping" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="110dp"
         app:layout_constraintStart_toEndOf="@+id/shipping_methods"
         app:layout_constraintTop_toBottomOf="@+id/postal_code">
 
