@@ -1,22 +1,16 @@
 package com.example.app;
 
-import androidx.annotation.NonNull;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -31,7 +25,8 @@ public class cartactivity extends AppCompatActivity {
     private ImageView infobtn;
     private Button continueshopping;
     private Toolbar toolbar;
-   private  ImageView backimg;
+    private  ImageView backimg;
+    private Button place_order;
 //    private Button buttonInsert;
 //    private Button buttonRemove;
 //    private EditText editTextInsert;
@@ -67,6 +62,16 @@ public class cartactivity extends AppCompatActivity {
             }
         });
 
+        place_order =(Button) findViewById(R.id.place_order);
+        place_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), Checkout.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
 //        buttonInsert=findViewById(R.id.button_insert);
 //        buttonRemove=findViewById(R.id.button_remove);
@@ -89,6 +94,7 @@ public class cartactivity extends AppCompatActivity {
 
 
     }
+
     public void changeheartimg(int position){
         if(affirmation.get(position).getmWishimg()==R.drawable.ic_baseline_favorite_border_24){
             affirmation.get(position).changeWish(R.drawable.ic_baseline_favorite_24);
@@ -214,6 +220,10 @@ public class cartactivity extends AppCompatActivity {
             }
         });
     }
+
+
+
+
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        MenuInflater menuInflater=getMenuInflater();

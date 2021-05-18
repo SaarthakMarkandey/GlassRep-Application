@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/slider_background"
+        android:backgroundTint="@color/galaxy_blue"
+        android:elevation="3dp"
+        android:padding="8dp"
+        android:text="@string/payment_methods"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/credit_card_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:contentDescription="@string/payment_using_credit_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_method"
+        app:srcCompat="@drawable/credit_card" />
+
+    <TextView
+        android:id="@+id/credit_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/slider_background"
+        android:padding="8dp"
+        android:text="@string/credit_card"
+        android:textColor="@color/galaxy_blue"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/credit_card_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/number"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/credit_card_image"
+        app:layout_constraintEnd_toEndOf="@+id/credit_card_image"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="@+id/credit_card_image"
+        app:layout_constraintTop_toTopOf="@+id/credit_card_image"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <EditText
+        android:id="@+id/card_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:hint="@string/date"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/credit_card_image"
+        app:layout_constraintEnd_toEndOf="@+id/credit_card_image"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/credit_card_image"
+        app:layout_constraintTop_toBottomOf="@+id/card_number"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/card_cvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="2"
+        android:hint="@string/cvv"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/credit_card_image"
+        app:layout_constraintStart_toEndOf="@+id/card_date"
+        app:layout_constraintTop_toBottomOf="@+id/card_number"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox_cod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="273dp"
+        android:layout_marginEnd="349dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_method" />
+
+    <TextView
+        android:id="@+id/cod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/slider_background"
+        android:padding="8dp"
+        android:text="@string/cash_on_delivery"
+        android:textColor="@color/galaxy_blue"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credit_card_image" />
+
+    <ImageView
+        android:id="@+id/g_pay"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="128dp"
+        android:background="@drawable/slider_background"
+        android:contentDescription="@string/payment_using_gpay"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_gpay"
+        app:layout_constraintTop_toBottomOf="@+id/cod"
+        app:srcCompat="@drawable/g_pay" />
+
+    <CheckBox
+        android:id="@+id/checkBox_gpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_cod" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,4 +33,23 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="order">Order</string>
+    <string name="checkout">Checkout</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="payment_using_credit_card">Payment Using Credit Card</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="number">Number</string>
+    <string name="date">Date</string>
+    <string name="cvv">CVV</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="payment_using_gpay">Payment Using GPay</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="last_name">Last Name</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="first_name">First Name</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="shipping_methods">Shipping Methods</string>
+    <string name="standard_shipping">Standard Shipping</string>
+    <string name="premium_shipping">Premium Shipping</string>
 </resources>
