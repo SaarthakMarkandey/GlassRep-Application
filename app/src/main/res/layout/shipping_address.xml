@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/slider_background"
         android:backgroundTint="@color/galaxy_blue"
         android:elevation="3dp"
@@ -122,15 +122,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shipping_methods" />
 
-    <CheckBox
-        android:id="@+id/checkBox_standard_shipping"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="26dp"
-        app:layout_constraintStart_toEndOf="@+id/standard_shipping"
-        app:layout_constraintTop_toBottomOf="@+id/shipping_methods" />
-
     <TextView
         android:id="@+id/premium_shipping"
         android:layout_width="wrap_content"
@@ -145,14 +136,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/standard_shipping" />
 
-    <CheckBox
-        android:id="@+id/checkBox_premium_shipping"
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toEndOf="@+id/premium_shipping"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox_standard_shipping" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toEndOf="@+id/shipping_methods"
+        app:layout_constraintTop_toBottomOf="@+id/postal_code">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="90dp" />
+
+    </RadioGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
