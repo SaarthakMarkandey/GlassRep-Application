@@ -52,4 +52,14 @@
     <string name="shipping_methods">Shipping Methods</string>
     <string name="standard_shipping">Standard Shipping</string>
     <string name="premium_shipping">Premium Shipping</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="add_address">Add Address</string>
+    <string name="use_saved_address">Use Saved Address</string>
+    <string name="or">OR</string>
+    <string name="shipping_address_toolbar">Shipping Address</string>
+    <string name="address_saved">Address</string>
+    <string name="pincode">Pincode</string>
+    <string name="full_name">Full Name</string>
+    <string name="edit">Edit</string>
+    <string name="remove">Remove</string>
 </resources>

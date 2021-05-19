@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="249dp"
         android:layout_marginRight="249dp"
         android:background="@drawable/slider_background"
@@ -40,7 +40,11 @@
         android:id="@+id/credit_card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="86dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/slider_background"
         android:padding="8dp"
@@ -50,7 +54,7 @@
         app:layout_constraintBottom_toTopOf="@+id/credit_card_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/payment_method" />
 
     <EditText
         android:id="@+id/card_number"
@@ -123,12 +127,11 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="128dp"
         android:background="@drawable/slider_background"
-        android:contentDescription="@string/payment_using_gpay"
         android:padding="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioGroup2"
         app:layout_constraintTop_toBottomOf="@+id/cod"
-        app:srcCompat="@drawable/g_pay" />
+        app:srcCompat="@drawable/upi" />
 
     <RadioGroup
         android:id="@+id/radioGroup2"
