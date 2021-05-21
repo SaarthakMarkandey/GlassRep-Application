@@ -15,10 +15,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/back_saved_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_alignParentLeft="true"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
             android:text="@string/shipping_address_toolbar"
+            android:fontFamily="@font/gilroymedium"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -48,6 +57,7 @@
         android:elevation="3dp"
         android:padding="8dp"
         android:text="@string/shipping_methods"
+        android:fontFamily="@font/gilroyregular"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,6 +125,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:fontFamily="@font/gilroymedium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

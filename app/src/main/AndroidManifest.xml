@@ -35,6 +35,9 @@
         <activity android:name=".PaymentDetails"/>
         <activity android:name=".AddAddress"/>
         <activity android:name=".SavedAddress"/>
+        <activity android:name=".UPIActivity"/>
+        <activity android:name=".PaytmActivity"/>
+        <activity android:name=".NetBankingActivity"/>
     </application>
 
 </manifest>

@@ -10,16 +10,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="249dp"
-        android:layout_marginRight="249dp"
         android:background="@drawable/slider_background"
         android:backgroundTint="@color/galaxy_blue"
         android:elevation="3dp"
         android:padding="8dp"
         android:text="@string/payment_methods"
         android:textColor="@color/white"
+        android:fontFamily="@font/gilroyregular"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +28,7 @@
         android:id="@+id/credit_card_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="81dp"
+        android:layout_marginTop="64dp"
         android:contentDescription="@string/payment_using_credit_card"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +78,7 @@
         android:ems="3"
         android:hint="@string/date"
         android:importantForAutofill="no"
-        android:inputType="date"
+        android:inputType="number"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/credit_card_image"
         app:layout_constraintEnd_toEndOf="@+id/credit_card_image"
@@ -108,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="145dp"
         android:background="@drawable/slider_background"
         android:padding="8dp"
@@ -116,7 +115,8 @@
         android:textColor="@color/galaxy_blue"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup_payment"
         app:layout_constraintTop_toBottomOf="@+id/credit_card_image" />
 
     <ImageView
@@ -124,37 +124,82 @@
         android:layout_width="155dp"
         android:layout_height="59dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="128dp"
         android:background="@drawable/slider_background"
+        android:backgroundTint="@color/colorAccent"
+        android:contentDescription="@string/upi_method"
         android:padding="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup_payment"
         app:layout_constraintTop_toBottomOf="@+id/cod"
         app:srcCompat="@drawable/upi" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="164dp"
+        android:contentDescription="@string/paytm_method"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup_payment"
+        app:layout_constraintTop_toBottomOf="@+id/g_pay"
+        app:srcCompat="@drawable/paytm" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="160dp"
+        android:background="@drawable/slider_background"
+        android:backgroundTint="@color/white"
+        android:padding="8dp"
+        android:text="@string/net_banking"
+        android:textColor="@color/galaxy_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/radioGroup_payment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="28dp"
         app:layout_constraintEnd_toStartOf="@+id/credit_card_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/payment_method">
 
         <RadioButton
+            android:id="@+id/credit_card_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <RadioButton
+            android:id="@+id/cod_btn"
             android:layout_width="wrap_content"
-            android:layout_height="220dp" />
+            android:layout_height="160dp"
+            android:layout_marginTop="40dp" />
 
         <RadioButton
+            android:id="@+id/upi_btn"
             android:layout_width="wrap_content"
             android:layout_height="30dp" />
+
+        <RadioButton
+            android:id="@+id/paytm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp" />
+
+        <RadioButton
+            android:id="@+id/net_banking_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
 
     </RadioGroup>
 

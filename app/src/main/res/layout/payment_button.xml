@@ -6,16 +6,16 @@
     android:layout_height="wrap_content">
 
     <Button
-        android:id="@+id/add_address"
+        android:id="@+id/proceed"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:background="@drawable/slider_background"
         android:backgroundTint="@color/galaxy_blue"
-        android:text="@string/add_address"
+        android:text="@string/proceed"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:fontFamily="@font/gilroymedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

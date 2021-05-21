@@ -62,4 +62,8 @@
     <string name="full_name">Full Name</string>
     <string name="edit">Edit</string>
     <string name="remove">Remove</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="upi_method">UPI method</string>
+    <string name="paytm_method">Paytm method</string>
+    <string name="proceed">Proceed</string>
 </resources>
