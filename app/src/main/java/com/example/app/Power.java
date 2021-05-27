@@ -1,16 +1,15 @@
 package com.example.app;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -81,8 +80,9 @@ public class Power extends AppCompatActivity {
 
                 }
                 else{
-                    Toast.makeText(Power.this,"allPowerfilled",Toast.LENGTH_LONG).show();
-
+                    Intent intent=new Intent(getApplicationContext(), PaymentDetails.class);
+                    startActivity(intent);
+                    finish();
                 }
 
             }
