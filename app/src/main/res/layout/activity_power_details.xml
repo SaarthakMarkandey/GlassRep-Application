@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="2dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Power_details">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.App.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/galaxy_blue"
+            app:popupTheme="@style/Theme.App.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_back_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+
+                    android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+                <TextView
+                    android:id="@+id/toolbarTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:maxLines="1"
+                    android:text="Enter Power Details"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/gilroyregular"
+                    android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="19dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22dp"
+                            android:fontFamily="@font/gilroy"
+                            android:textColor="@color/galaxy_blue"
+                            android:text="Prescribtion"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date:"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gilroymedium"
+                            android:layout_marginLeft="70dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="14/08/2021"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/galaxy_blue"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gilroymedium"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="19dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/gilroy"
+                            android:text="Name :"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Saarthak"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/galaxy_blue"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gilroymedium"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age :"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gilroymedium"
+                            android:layout_marginLeft="55dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/galaxy_blue"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gilroymedium"
+                            />
+                    </LinearLayout>
+
+
+                    <TableLayout
+                        android:layout_marginBottom="20dp"
+                        android:alpha="0.5"
+                        android:background="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+
+                                android:background="@drawable/border"/>
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:text="Right Eye"
+                                android:fontFamily="@font/gilroymedium"
+                                android:textColor="@color/galaxy_blue"
+                                android:padding="10dp"
+                                android:background="@drawable/border"/>
+                            <TextView
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:text="Left Eye"
+                                android:gravity="center"
+                                android:textColor="@color/galaxy_blue"
+                                android:fontFamily="@font/gilroymedium"
+                                android:padding="10dp"
+                                android:background="@drawable/border"
+                                />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="match_parent"/>
+                            </TableRow>
+                            <TableRow
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="   "
+                                    android:gravity="center"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="   "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="  "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"/>
+                            </TableRow>
+                            <TableRow
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="   "
+                                    android:gravity="center"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="   "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="  "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"/>
+                            </TableRow>
+
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="Distance"
+                                    android:fontFamily="@font/gilroymedium"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="match_parent"/>
+                            </TableRow>
+                            <TableRow
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="+6.5"
+                                    android:gravity="center"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="-0.75"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="160"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:background="@drawable/border"/>
+                            </TableRow>
+                            <TableRow
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="+7.5"
+                                    android:gravity="center"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="        "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"/>
+                            </TableRow>
+
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="Addition"
+                                    android:fontFamily="@font/gilroymedium"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="match_parent"/>
+                            </TableRow>
+                            <TableRow
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="          "
+                                    android:gravity="center"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="           "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text=" +2.0"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+
+                                    android:background="@drawable/border"/>
+                            </TableRow>
+                            <TableRow
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="   "
+                                    android:gravity="center"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="  "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="  "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+
+                                    android:background="@drawable/border"/>
+                            </TableRow>
+
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:padding="10dp"
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/gilroymedium"
+                                    android:text="Reading"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="match_parent"/>
+                            </TableRow>
+                            <TableRow
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="           "
+                                    android:gravity="center"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="            "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="33.5/"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+
+                                    android:background="@drawable/border"/>
+                            </TableRow>
+                            <TableRow
+
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="33.5"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+
+                                    android:background="@drawable/border"/>
+                                <TextView
+
+                                    android:background="@drawable/border"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="        "
+                                    android:gravity="center"
+                                    android:textColor="@color/galaxy_blue"
+                                    android:layout_width="wrap_content"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="       "
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+
+                                    android:background="@drawable/border"/>
+
+                            </TableRow>
+
+
+
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/glass"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Vincent"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp"
+                        android:textColor="@color/galaxy_blue"
+                        android:fontFamily="@font/gilroy"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter your Power details from your prescribtion"
+                        android:textColor="@color/galaxy_blue"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/gilroy"
+                        />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="135dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Right"
+                                android:textColor="@color/galaxy_blue"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/gilroyregular"
+                                />
+                            <TextView
+                                android:layout_marginRight="55dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Left"
+                                android:textColor="@color/galaxy_blue"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/gilroyregular"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Spherical (Sph)"
+                                android:textColor="@color/galaxy_blue"
+                                android:fontFamily="@font/gilroymedium"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="18dp"/>
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+
+                                android:id="@+id/sph_right"
+                                android:layout_marginRight="120dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:id="@+id/sph_right_text"
+                                        android:textColor="@color/galaxy_blue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Select"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+
+                                android:id="@+id/sph_left"
+                                android:layout_marginRight="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:id="@+id/sph_left_text"
+                                        android:textColor="@color/galaxy_blue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Select"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>                    </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cylinderical (Cyl)"
+                                android:textColor="@color/galaxy_blue"
+                                android:fontFamily="@font/gilroymedium"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="18dp"/>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+
+                                android:id="@+id/cyl_right"
+                                android:layout_marginRight="120dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:id="@+id/cyl_right_text"
+                                        android:textColor="@color/galaxy_blue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Select"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+
+                                android:id="@+id/cyl_left"
+                                android:layout_marginRight="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:id="@+id/cyl_left_text"
+                                        android:textColor="@color/galaxy_blue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Select"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Axis"
+                                android:textColor="@color/galaxy_blue"
+                                android:fontFamily="@font/gilroymedium"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="18dp"/>
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+
+                                android:id="@+id/axis_right"
+                                android:layout_marginRight="120dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:gravity="center"
+                                        android:id="@+id/axis_right_text"
+                                        android:textColor="@color/galaxy_blue"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Select"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+
+                                android:id="@+id/axis_left"
+                                android:layout_marginRight="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:gravity="center"
+                                        android:id="@+id/axis_left_text"
+                                        android:textColor="@color/galaxy_blue"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Select"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Additional(Add.)"
+                                android:textColor="@color/galaxy_blue"
+                                android:fontFamily="@font/gilroymedium"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="18dp"/>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+
+                                android:id="@+id/additional_right"
+                                android:layout_marginRight="120dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:id="@+id/add_right_text"
+                                        android:textColor="@color/galaxy_blue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Select"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+
+                                android:id="@+id/additional_left"
+                                android:layout_marginRight="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:id="@+id/add_left_text"
+                                        android:textColor="@color/galaxy_blue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Select"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/warning"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*This is Required"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/gilroymedium"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/textField"
+                        app:startIconDrawable="@drawable/ic_baseline_person_24"
+                        app:startIconTint="@color/galaxy_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:hint="User's Name"
+                        app:errorTextColor="@color/red"
+                        app:errorEnabled="false"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:textColorHighlight="@color/galaxy_blue"
+
+                            android:inputType="textPersonName"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilroymedium"
+                            android:textColor="@color/galaxy_blue"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/textField_phone_number"
+                        app:startIconDrawable="@drawable/ic_baseline_phone_android_24"
+                        app:startIconTint="@color/galaxy_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:hint="User's Mobile Number"
+                        app:counterMaxLength="10"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/mobilenum"
+                            android:inputType="phone"
+                            android:textColorHighlight="@color/galaxy_blue"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilroymedium"
+                            android:textColor="@color/galaxy_blue"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/submitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Power"
+                android:textColor="@color/white"
+                android:background="@color/galaxy_blue"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy"
+                android:textSize="20dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:elevation="8dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="2dp"
+    app:cardMaxElevation="8dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_product"
+                android:layout_width="130dp"
+                android:src="@drawable/glass"
+                android:screenReaderFocusable="true"
+                android:scaleType="fitXY"
+                android:layout_height="130dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/prod_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/gilroymedium"
+                    android:text="Glasses ycjycjgghhh"
+                    android:textColor="@color/galaxyblue"/>
+                <TextView
+                    android:id="@+id/prod_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(sunglass567895)"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prod_specs"
+                        android:text="500"
+
+                        android:textSize="20sp"
+                        android:fontFamily="@font/gilroymedium"
+                        android:textColor="@color/galaxyblue"
+                        />
+
+
+                </LinearLayout>
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:orientation="horizontal">
+
+
+                <Button
+
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/addpower_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Power"
+                    android:background="@color/galaxyblue"
+                    android:foreground="?android:attr/selectableItemBackground"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/white"
+
+
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/power_card"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/total_power_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eye Power:"
+                    android:textSize="18dp"
+
+                    android:textColor="@color/galaxy_blue"
+                    android:fontFamily="@font/gilroy"
+                    android:background="@color/white"/>
+                <LinearLayout
+                    android:id="@+id/power_info"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Left Eye"
+                            android:textSize="17dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/galaxy_blue"
+                            android:fontFamily="@font/gilroy"
+                            />
+                        <TextView
+                            android:id="@+id/right_eye"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Right Eye"
+                            android:layout_marginRight="80dp"
+                            android:textSize="17dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/galaxy_blue"
+                            android:fontFamily="@font/gilroy"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spherical (SPH)"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/gilroymedium"
+                            />
+                        <TextView
+                            android:id="@+id/left_sph"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-1.0"
+
+                            android:textSize="17dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/gilroy"
+                            />
+                        <TextView
+                            android:id="@+id/right_sph"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+1.25"
+                            android:textSize="17dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/gilroy"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cylindrical (CYL)"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/gilroymedium"
+                            />
+                        <TextView
+                            android:id="@+id/left_cyl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-1.0"
+                            android:textSize="17dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/gilroy"
+                            />
+                        <TextView
+                            android:id="@+id/right_cyl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+1.25"
+                            android:textSize="17dp"
+
+                            android:layout_marginRight="80dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/gilroy"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/gilroymedium"
+                            android:text="Aixs"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                        <TextView
+                            android:id="@+id/left_axis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-1.0"
+                            android:textSize="17dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/gilroy"
+                            />
+                        <TextView
+                            android:id="@+id/right_axis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+1.25"
+
+                            android:textSize="17dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/gilroy"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Additional"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/gilroymedium"
+                            />
+                        <TextView
+                            android:id="@+id/left_additional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-1.0"
+                            android:textSize="17dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/gilroy"
+                            />
+                        <TextView
+                            android:id="@+id/right_additional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+1.25"
+                            android:textSize="17dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/gilroy"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/galaxy_blue"/>
+
+                <RelativeLayout
+
+                    android:id="@+id/given_power"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="8dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_baseline_account_circle_24"/>
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textSize="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/galaxy_blue"
+                        android:layout_marginLeft="40dp"
+                        android:fontFamily="@font/gilroylight"
+                        />
+                    <ImageView
+                        android:foreground="?android:attr/selectableItemBackground"
+
+                        android:id="@+id/arrow_up_down"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="#CDCBCB"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        />
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
