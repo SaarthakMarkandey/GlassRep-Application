@@ -29,7 +29,7 @@ public class PaymentDetails extends AppCompatActivity {
         back_payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(), cartactivity.class);
+                Intent intent=new Intent(getApplicationContext(), Power.class);
                 startActivity(intent);
                 finish();
             }
