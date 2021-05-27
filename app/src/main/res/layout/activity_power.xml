@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:theme="@style/Theme.App.NoActionBar"
+
+    android:layout_height="match_parent"
+    tools:context=".PowerActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.App.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/galaxy_blue"
+            app:popupTheme="@style/Theme.App.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_back_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+
+                    android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+                <TextView
+                    android:id="@+id/toolbarTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:maxLines="1"
+                    android:text="Eye Power"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/gilroyregular"
+                    android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+
+            android:elevation="100dp"
+            app:cardCornerRadius="20dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:layout_height="150dp"
+                android:src="@drawable/app_symbol"/>
+            <TextView
+                android:layout_marginTop="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to Submit Power?"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textColor="@color/galaxy_blue"
+                android:fontFamily="@font/gilroy"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:text="You can submit power via:"
+            android:textColor="@color/galaxy_blue"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/purewhite"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_call_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Call"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/gilroyregular"
+                    android:textColor="@color/galaxy_blue"
+                    android:layout_marginTop="60dp"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/purewhite"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_call_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Call"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/gilroyregular"
+                    android:textColor="@color/galaxy_blue"
+                    android:layout_marginTop="60dp"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/purewhite"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_email_24"/>
+
+                <TextView
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/gilroyregular"
+                    android:text="Em@il"
+                    android:textColor="@color/galaxy_blue"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit_power_btn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/galaxy_blue"
+            app:strokeWidth="3dp"
+            android:text="Submit Power Now"
+
+            android:fontFamily="@font/gilroy"
+            android:layout_marginTop="120dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>

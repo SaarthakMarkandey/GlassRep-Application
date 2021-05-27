@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/eye"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Right Eye"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/galaxy_blue"
+        android:fontFamily="@font/gilroymedium"
+        />
+    <TextView
+        android:id="@+id/aixis_text"
+        android:layout_below="@+id/eye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Axis-Eye Glass Power"
+        android:gravity="center"
+
+        android:textSize="15dp"
+        android:fontFamily="@font/gilroymedium"/>
+    <EditText
+        android:id="@+id/axis_edit_text"
+        android:layout_below="@+id/aixis_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Axis value between 0-180"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gilroymedium"
+        android:textColor="@color/galaxy_blue"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".securitysteppage"
+    >
+    <include
+        layout="@layout/securitystepbackground"/>
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/galaxy_blue"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_back_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+
+                    android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+                <TextView
+                    android:id="@+id/toolbarTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:maxLines="1"
+                    android:text="Security Step"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/gilroyregular"
+                    android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/photo_text"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload the photo of the frame which you want to repair"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@color/galaxy_blue"/>
+
+    <LinearLayout
+        android:padding="50dp"
+        android:orientation="vertical"
+        android:layout_below="@id/photo_text"
+        android:layout_marginTop="200dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Photo!!"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedbackground"
+            android:fontFamily="@font/gilroy"/>
+        <Button
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/roundedbackground"
+            android:text="Select Photo from device!!"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/galaxy_blue"
+        android:fontFamily="@font/gilroy"/>
+
+
+</RelativeLayout>
