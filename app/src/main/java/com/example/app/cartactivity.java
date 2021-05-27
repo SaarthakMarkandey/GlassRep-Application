@@ -45,7 +45,7 @@ public class cartactivity extends AppCompatActivity {
         backimg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(cartactivity.this,MainActivity.class));
+                finish();
             }
         });
 //        toolbar=(Toolbar)findViewById(R.id.toolbar);
@@ -66,9 +66,9 @@ public class cartactivity extends AppCompatActivity {
         place_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(), PowerActivity.class);
+                Intent intent=new Intent(cartactivity.this, PowerActivity.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 

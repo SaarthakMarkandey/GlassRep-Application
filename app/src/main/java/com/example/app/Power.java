@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -20,6 +21,7 @@ public class Power extends AppCompatActivity {
     private RecyclerView.LayoutManager mlayoutManager;
     private int curritem;
     private Button submit_all_power;
+    private ImageView backimg;
 
     static ArrayList<PowerModel>powerModels;
     @Override
@@ -30,6 +32,13 @@ public class Power extends AppCompatActivity {
 //        Bundle bundle=intent2.getBundleExtra("BUNDLE");
 //        affirmations=(ArrayList<Affirmation>) bundle.getSerializable("CARTITEM");
         submit_all_power=(Button)findViewById(R.id.submit_all_powers);
+        backimg=(ImageView)findViewById(R.id.img_back_cart);
+        backimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         createPowerList();
         setPowerAdapter();
 

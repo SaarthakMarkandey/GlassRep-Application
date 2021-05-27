@@ -12,6 +12,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,11 +20,12 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class Power_details extends AppCompatActivity implements Axis_Dialogue.AxisDialogueListener{
-    Button button;
-    TextInputLayout user,num;
-    TextInputEditText username,mobilenumber;
-    TextView sph_right,sph_left,cyl_left,cyl_right,add_right,add_left,axis_left,axis_right,warning;
-    CardView sph_right_card,sph_left_card,cyl_right_card,cyl_left_card,add_right_card,add_left_card,axis_left_card,axis_right_card;
+    private Button button;
+   private TextInputLayout user,num;
+    private TextInputEditText username,mobilenumber;
+    private TextView sph_right,sph_left,cyl_left,cyl_right,add_right,add_left,axis_left,axis_right,warning;
+    private CardView sph_right_card,sph_left_card,cyl_right_card,cyl_left_card,add_right_card,add_left_card,axis_left_card,axis_right_card;
+    private ImageView backimg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +52,13 @@ public class Power_details extends AppCompatActivity implements Axis_Dialogue.Ax
         num=(TextInputLayout)findViewById(R.id.textField_phone_number);
         button=(Button)findViewById(R.id.submitbtn);
         warning=(TextView)findViewById(R.id.warning);
+        backimg=(ImageView)findViewById(R.id.img_back_cart);
+        backimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Power_details.this,ModeOfPowerEntry.class));
+            }
+        });
         sph_right_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
