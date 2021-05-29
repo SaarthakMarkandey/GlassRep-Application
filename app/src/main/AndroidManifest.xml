@@ -15,7 +15,8 @@
         <activity android:name=".Power_details"
             android:exported="true"/>
         <activity android:name=".Power" />
-        <activity android:name=".PowerActivity" />
+        <activity android:name=".PowerActivity"
+            android:parentActivityName=".cartactivity"/>
         <activity android:name=".ModeOfPowerEntry" />
         <activity android:name=".securitysteppage" />
         <activity android:name=".createAccount.SignUp1" />

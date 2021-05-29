@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.button.MaterialButton;
 
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 public class PowerActivity extends AppCompatActivity {
     private MaterialButton materialButton;
     private ArrayList<Affirmation>affirmations;
+    private ImageView backimg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,14 @@ public class PowerActivity extends AppCompatActivity {
 //                bundle.putSerializable("CARTITEM",(Serializable)affirmations);
 //                intent.putExtra("BUNDLE",bundle);
                 startActivity(intent);
+            }
+        });
+        backimg=(ImageView)findViewById(R.id.img_back_cart);
+        backimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+//                startActivity(new Intent(PowerActivity.this,cartactivity.class));
             }
         });
     }

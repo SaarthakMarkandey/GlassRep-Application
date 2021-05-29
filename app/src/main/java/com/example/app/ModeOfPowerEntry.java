@@ -6,11 +6,12 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 public class ModeOfPowerEntry extends AppCompatActivity {
     private CardView manual_mode,saved_mode,camera_mode,call_mode;
     private String sph_right,sph_left,cyl_left,cyl_right,add_right,add_left,axis_left,axis_right,user,num;
-
+    private ImageView backimg;
 
 
     @Override
@@ -27,6 +28,13 @@ public class ModeOfPowerEntry extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(ModeOfPowerEntry.this,Power_details.class);
                 startActivityForResult(intent,1);
+            }
+        });
+        backimg=(ImageView)findViewById(R.id.img_back_cart);
+        backimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
