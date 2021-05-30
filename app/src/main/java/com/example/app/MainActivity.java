@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -18,10 +20,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.app.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+import org.jetbrains.annotations.NotNull;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
-        NavigationView navigationView = binding.navView;
+        navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
@@ -49,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -80,5 +88,18 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
+
+        if(item.getItemId()==R.id.nav_account)
+        {
+
+            Intent intent=new Intent(getApplicationContext(),MyAccount.class);
+            startActivity(intent);
+        }
+        return true;
     }
 }
