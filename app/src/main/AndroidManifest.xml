@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
+
         <activity android:name=".Add_Acitivity"></activity>
         <activity android:name=".Cyl_Chart" />
         <activity android:name=".Spherical_chart" />
@@ -19,6 +20,12 @@
             android:parentActivityName=".cartactivity"/>
         <activity android:name=".ModeOfPowerEntry" />
         <activity android:name=".securitysteppage" />
+
+        <activity android:name=".EditProfile"></activity>
+        <activity android:name=".MyAccount">
+
+        </activity>
+
         <activity android:name=".createAccount.SignUp1" />
         <activity android:name=".forgetPassword.SuccessMessage" />
         <activity android:name=".createAccount.SignUp2" />
@@ -41,12 +48,14 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.App.NoActionBar" />
+
         <activity android:name=".PaymentDetails" />
         <activity android:name=".AddAddress" />
         <activity android:name=".SavedAddress" />
         <activity android:name=".UPIActivity" />
         <activity android:name=".PaytmActivity" />
         <activity android:name=".NetBankingActivity" />
+
     </application>
 
 </manifest>

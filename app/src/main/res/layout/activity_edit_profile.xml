@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="28dp"
+    tools:context=".EditProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:onClick="myAccountPage"
+        android:transitionName="transition_back_button"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Info"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/brandon_grotesque_black"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:id="@+id/personal_info"
+        />
+
+    <View
+        android:layout_width="190dp"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/personal_info"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/name_layout"
+        android:layout_below="@id/view">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:id="@+id/full_name_image"
+            android:layout_centerVertical="true"
+            android:src="@drawable/name"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/full_name_image"
+            android:id="@+id/full_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:boxBackgroundColor="@color/white1"
+            android:hint="Full Name"
+            app:counterTextColor="@color/colorPrimaryDark"
+            android:textColorHint="#757575"
+            app:startIconTint="@color/colorPrimaryDark"
+            app:boxStrokeWidthFocused="3dp"
+            app:boxStrokeColor="@color/colorPrimaryDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textCursorDrawable="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/email_layout"
+            android:layout_below="@id/name_layout">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:id="@+id/email_image"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_email"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/email_image"
+                android:id="@+id/email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxBackgroundColor="@color/white1"
+                android:hint="Email"
+                android:textColorHint="#757575"
+                app:helperTextTextColor="@color/colorPrimaryDark"
+                app:startIconTint="@color/colorPrimaryDark"
+                app:boxStrokeWidthFocused="3dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textCursorDrawable="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:layout_width="match_parent"
+            android:id="@+id/mobile_pin"
+            android:layout_below="@+id/email_layout"
+            android:layout_height="wrap_content"
+            app:ccp_showFlag="true"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="15dp"
+            app:ccp_backgroundColor="@color/text"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            app:ccp_showFullName="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_layout"
+            android:layout_below="@id/mobile_pin">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/mobile_no_image"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_mobile"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/mobile_no_image"
+                android:id="@+id/mobile_no"
+                app:placeholderTextColor="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxBackgroundColor="@color/white1"
+                android:hint="Mobile No"
+                android:textColorHint="#757575"
+                app:startIconTint="@color/colorPrimaryDark"
+                app:boxStrokeWidthFocused="3dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textCursorDrawable="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/dob"
+            android:layout_below="@id/mobile_layout"
+            android:layout_marginTop="15dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/dob_image"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_dob"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="21sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/dob_image"
+                    android:text="Choose Your D.O.B"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+
+            </RelativeLayout>
+
+
+
+            <DatePicker
+                android:id="@+id/agePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#757575"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"/>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:background="@drawable/big_button"
+            android:textColor="@color/text"
+            android:layout_below="@+id/dob"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"/>
+
+
+        </RelativeLayout>
+
+
+
+</ScrollView>
